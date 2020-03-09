@@ -20,7 +20,7 @@ In this step, we will navigate to S3 Console and create the S3 bucket used throu
 
 Login to AWS Console: https://console.aws.amazon.com/console/home?region=us-west-2
 
-Navigate to S3 Console & Create a new bucket in us-east-1 region :
+Navigate to S3 Console & Create a new bucket in us-west-2 region :
 
 * GoTo : https://s3.console.aws.amazon.com/s3/home?region=us-west-2
 * Click - **Create Bucket**
