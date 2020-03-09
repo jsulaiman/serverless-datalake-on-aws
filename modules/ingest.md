@@ -8,7 +8,7 @@ Updated by: Vikas Omer | Amazon Web Services | [Linkedin](https://www.linkedin.c
 
 # Pre-requisites:  
 * You need to have access to an AWS account with **AdminstratorAccess**
-* This lab should be executed in **us-east-1** region
+* This lab should be executed in **us-west-2** region
 * Best is to **follow links from this  guide** & open them **in new a tab**
 * Run this lab in a modern browser
 
@@ -18,14 +18,14 @@ Updated by: Vikas Omer | Amazon Web Services | [Linkedin](https://www.linkedin.c
 
 In this step, we will navigate to S3 Console and create the S3 bucket used throughout this demo.
 
-Login to AWS Console: https://console.aws.amazon.com/console/home?region=us-east-1
+Login to AWS Console: https://console.aws.amazon.com/console/home?region=us-west-2
 
 Navigate to S3 Console & Create a new bucket in us-east-1 region :
 
-* GoTo : https://s3.console.aws.amazon.com/s3/home?region=us-east-1
+* GoTo : https://s3.console.aws.amazon.com/s3/home?region=us-west-2
 * Click - **Create Bucket**
     * Bucket Name : **yourname-datalake-demo-bucket**
-    * Region : **US EAST (N. Virginia)**
+    * Region : **US WEST (Oregon)**
     * Click **Create** (bottom left)
 * Adding reference data
     * Open - **yourname-datalake-demo-bucket**
@@ -48,7 +48,7 @@ Navigate to S3 Console & Create a new bucket in us-east-1 region :
 
 In this step we will create navigate to Kinesis Console & create a Kinesis Firehose delivery stream to ingest data & store in S3:
 
-* GoTo: https://console.aws.amazon.com/kinesis/home?region=us-east-1#/get-started
+* GoTo: https://console.aws.amazon.com/kinesis/home?region=us-west-2#/get-started
 * Click **Create Delivery Stream**
     * Step 1: Name and source
         * Delivery stream name : **sg-summit-demo-stream**
@@ -104,7 +104,7 @@ In this step we will configure Kinesis Data Generator to produce fake data and i
         * GoTo outputs tab : click on the link that says: **KinesisDataGeneratorUrl** - This will open your Kinesis Data Generator tool
 * On Amazon Kinesis Data Generator homepage
     * **Login** with your username & password from previous step
-    * **Region: us-east-1**
+    * **Region: us-west-2**
     * **Stream/delivery stream : sg-summit-demo-stream**
     * Records per second : 2000
     * **Record template  : **In the **big text area**, add the following json template
@@ -134,7 +134,7 @@ Once the tools send ~ 100,000 messages, you can click on - **Stop sending data t
 
 ## Validate that data has arrived in S3
 
-After few moments GoTo S3 console:https://s3.console.aws.amazon.com/s3/home?region=us-east-1
+After few moments GoTo S3 console:https://s3.console.aws.amazon.com/s3/home?region=us-west-2
 
 * Click - **yourname-datalake-demo-bucket > Data**
 * There should be a folder called **raw** created > Open it and keep navigating, you will notice that firehose has dumped the data in S3 using **yyyy/mm/dd/hh** partitioning 
