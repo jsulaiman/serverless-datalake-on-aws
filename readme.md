@@ -16,7 +16,7 @@ Updated by: Vikas Omer | Amazon Web Services | [Linkedin](https://www.linkedin.c
 
 # Pre-requisites:  
 * You need to have access to an AWS account with **AdminstratorAccess**
-* This lab should be executed in **us-east-1** region
+* This lab should be executed in **us-west-2** region
 * Best is to **follow links from this  guide** & open them **in new a tab**
 * Run this lab in a modern browser
 
