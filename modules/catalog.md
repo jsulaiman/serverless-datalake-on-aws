@@ -83,7 +83,7 @@ Navigate to Glue Catalog & explore the crawled data:
 
 Lets query newly ingested data using Amazon Athena
 
-* GoTo : https://us-east-1.console.aws.amazon.com/athena/home?region=us-west-2#query
+* GoTo : https://us-west-2.console.aws.amazon.com/athena/home?region=us-west-2#query
 * On the left panel (**Database**) drop down , select **summitdb** > select table **raw**
 * Click on **3 dots** (3 vertical dots) > Select **Preview Table**
 * Review the output 
