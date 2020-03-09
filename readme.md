@@ -1,5 +1,7 @@
 # Building Serverless Data Lakes on AWS
 
+**Note: this fork uses US West (Oregon)**
+
 Author: Unni Pillai | Amazon Web Services | [Twitter](https://twitter.com/unni_k_pillai) | [Linkedin](http://bit.ly/upillai)
 
 Updated by: Vikas Omer | Amazon Web Services | [Linkedin](https://www.linkedin.com/in/vikas-omer/)
