@@ -16,7 +16,7 @@ Completed the previous modules
 
 In this step we will navigate to IAM Console & create a new Glue service role, this allows AWS Glue to access data sitting in S3 and create necessary entities in Glue catalog.
 
-* GoTo: https://console.aws.amazon.com/iam/home?region=us-east-1#/roles
+* GoTo: https://console.aws.amazon.com/iam/home?region=us-west-2#/roles
 * Click - **Create role**
     * Choose the service that will use this role: **Glue**
     * Click - **Next: Permissions**
@@ -37,7 +37,7 @@ In this step we will navigate to IAM Console & create a new Glue service role, t
 
 In this step, we will navigate to AWS Glue Console & create glue crawlers to discovery the newly ingested data in S3.
 
-* GoTo: https://console.aws.amazon.com/glue/home?region=us-east-1
+* GoTo: https://console.aws.amazon.com/glue/home?region=us-west-2
 * On the left panel, click on **Crawlers** > Click on **Add Crawler**
     * Crawler info
         * Crawler name: **summitcrawler**
@@ -72,7 +72,7 @@ In this step, we will navigate to AWS Glue Console & create glue crawlers to dis
 
 Navigate to Glue Catalog & explore the crawled data:
 
-* GoTo : https://console.aws.amazon.com/glue/home?region=us-east-1#catalog:tab=databases 
+* GoTo : https://console.aws.amazon.com/glue/home?region=us-west-2#catalog:tab=databases 
     * Click - **summitdb**
 * Click - **Tables in summitdb**
     * Click - **raw**
@@ -83,7 +83,7 @@ Navigate to Glue Catalog & explore the crawled data:
 
 Lets query newly ingested data using Amazon Athena
 
-* GoTo : https://us-east-1.console.aws.amazon.com/athena/home?region=us-east-1#query
+* GoTo : https://us-east-1.console.aws.amazon.com/athena/home?region=us-west-2#query
 * On the left panel (**Database**) drop down , select **summitdb** > select table **raw**
 * Click on **3 dots** (3 vertical dots) > Select **Preview Table**
 * Review the output 
