@@ -22,11 +22,11 @@ Let's create a Lambda Function which will host the code for Athena to query and 
 
 In this section, we will create a folder under bucket created in the previous lab to store the query results produced by Athena.
 
-Login to AWS Console: https://console.aws.amazon.com/console/home?region=us-east-1
+Login to AWS Console: https://console.aws.amazon.com/console/home?region=us-west-2
 
-Navigate to S3 Console in us-east-1 region :
+Navigate to S3 Console in us-west-2 region :
 
-- GoTo : https://s3.console.aws.amazon.com/s3/home?region=us-east-1
+- GoTo : https://s3.console.aws.amazon.com/s3/home?region=us-west-2
 
 - Add new folder for query results data
 
@@ -44,9 +44,9 @@ In this section, we will create the required Lambda Function.
 
 Navigate to Lambda console and create a new lambda function:
 
-- GoTo: https://console.aws.amazon.com/lambda/home?region=us-east-1
+- GoTo: https://console.aws.amazon.com/lambda/home?region=us-west-2
 
-  **Note:** Make sure Region is selected as **US East (N. Virginia)** which is us-east-1
+  **Note:** Make sure Region is selected as **US West (Oregon)** which is us-east-1
 
 - Click: **Create function** (if you are using Lambda for the first time, then you might have to click Get Started to ptoceed)
 
@@ -279,7 +279,7 @@ Let's verify the results through Athena
 
 Login to the Amazon Athena Console.
 
-- GoTo: https://console.aws.amazon.com/athena/home?region=us-east-1#query
+- GoTo: https://console.aws.amazon.com/athena/home?region=us-west-2#query
 
 - As Athena uses the AWS Glue catalog for keeping track of data source, any S3 backed table in Glue will be visible to Athena.
 
