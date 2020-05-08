@@ -35,7 +35,7 @@ In this step we will navigate to IAM Console & create a new Glue service role, t
 
 ## Create AWS Glue Crawlers
 
-In this step, we will navigate to AWS Glue Console & create glue crawlers to discovery the newly ingested data in S3.
+In this step, we will navigate to AWS Glue Console & create glue crawlers to discover the newly ingested data in S3.
 
 * GoTo: https://console.aws.amazon.com/glue/home?region=us-west-2
 * On the left panel, click on **Crawlers** > Click on **Add Crawler**
